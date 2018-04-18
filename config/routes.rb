@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
+  get '/welcome' => 'home#index' #creating new route and pointing to controller home, action index
   root 'home#index'
   resources :phones
   resources :addresses
